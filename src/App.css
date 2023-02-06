@@ -2,18 +2,24 @@
   text-align: center;
 } */
 .practise{
-  display: grid;
-  grid-template-areas: 
+  display: flex;
+  /* grid-template-areas: 
   "side full full full full full full full" 
-  "side full full full full full full full"
+  "side full full full full full full full" */
  
   ;
 }
 .sidebar{
-  grid-area: side;
-  background-color: aqua;
+  /* grid-area: side; */
+  background-color: blueviolet !important;
+  width: 20%;
+  height: 100vh;
 }
 .fullbar{
-  grid-area: full;
-  background-color: blue;
+  /* grid-area: full; */
+  background-color: whitesmoke;
+  width: 80%;
+}
+.try{
+  width: 20%;
 }
