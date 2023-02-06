@@ -1,25 +1,48 @@
 /* .App {
   text-align: center;
 } */
-.practise{
+.fullScreen{
   display: flex;
-  /* grid-template-areas: 
-  "side full full full full full full full" 
-  "side full full full full full full full" */
- 
-  ;
-}
-.sidebar{
-  /* grid-area: side; */
-  background-color: blueviolet !important;
-  width: 20%;
-  height: 100vh;
 }
 .fullbar{
-  /* grid-area: full; */
   background-color: whitesmoke;
   width: 80%;
 }
-.try{
+.sidebar{
+  background-color: rgb(46, 162, 208) !important;
   width: 20%;
+  height: 100vh;
+  color: white;
+}
+.sbadmin{
+  text-align: center;
+  font-size:x-large;
+  /* margin: 1rem 0 1rem 1.5rem; */
+}
+.sideElement{
+  color: rgb(224, 217, 217);
+  background-color:rgb(46, 162, 208) !important;
+  
+  font-size: large !important;
+}
+.sideElement:hover{
+  color: white
+}
+.sidegrey{
+  color: rgb(184, 182, 182);
+  font-size: small;
+}
+.AccordionWhite{
+  background-color: white;
+  color: black !important;
+}
+.AccordionWhite:hover{
+  background-color: rgb(137, 129, 129);
+}
+.dummy:hover{
+  background-color: white !important;
+}
+.iconsOut{
+  margin-left: 1rem;
+  margin-top: 1rem;
 }

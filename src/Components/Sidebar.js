@@ -4,76 +4,75 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import BuildIcon from '@mui/icons-material/Build';
+import AdjustIcon from '@mui/icons-material/Adjust';
+import BackupTableIcon from '@mui/icons-material/BackupTable';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import LayersIcon from '@mui/icons-material/Layers';
+// import {BuildIcon ,AdjustIcon,LayersIcon,BarChartIcon,BackupTableIcon}  from '@mui/icons-material';
 
 const Sidebar = () => {
   return (
-    <div className='practise'>
-            <div className='sidebar'>Sidebar
+    <div className='fullScreen'>
+            <div className='sidebar'>
             <div>
-            <div>
-            SB Admin
-          </div>
+            <div className='sbadmin'>😀  SB Admin</div>
           <hr></hr>
-            <div>
-           Dashboard
-          </div>
+            <span> <DashboardIcon className='iconsOut'/></span><span> Dashboard</span>
           <hr></hr>
-          <div>
-       Interface
-          </div>
+          <div className='sidegrey' >Interface</div>
         
-      <Accordion class Name='try'>
+      <Accordion className='sideElement'>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-          <Typography>Components</Typography>
+          <Typography className='sideElement'> <AdjustIcon className='icons'/> Components</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <div>Custom Components</div>
-          <Typography>Cards</Typography>
-          <Typography>Buttons</Typography>
+          <div className='sidegrey AccordionWhite dummy'>Custom Components</div>
+          <Typography className='AccordionWhite'>Cards</Typography>
+          <Typography className='AccordionWhite'>Buttons</Typography>
         </AccordionDetails>
       </Accordion>
 
-      <Accordion class Name='try'>
+      <Accordion className='sideElement'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Utilities</Typography>
+          <Typography className='sideElement'> <BuildIcon className='icons'/> Utilities</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <div>Custom Utilities</div>
-          <Typography>Colors</Typography>
-          <Typography>Borders</Typography>
-          <Typography>Animations</Typography>
-          <Typography>Others</Typography>
+          <div className='sidegrey AccordionWhite dummy' >Custom Utilities</div>
+          <Typography className='AccordionWhite'>Colors</Typography>
+          <Typography className='AccordionWhite'>Borders</Typography>
+          <Typography className='AccordionWhite'>Animations</Typography>
+          <Typography className='AccordionWhite'>Others</Typography>
         </AccordionDetails>
       </Accordion>
      <hr></hr>
-     <div>
-       Interface
-          </div>
-     <Accordion class Name='try'>
+     <div className='sidegrey'>Addons</div>
+     <Accordion className='sideElement'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Pages</Typography>
+          <Typography className='sideElement'> <LayersIcon className='icons'/> Pages</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <div>LOGIN SCREENS</div>
-          <Typography>Login</Typography>
-          <Typography>Register</Typography>
-          <Typography>Forgot Password</Typography>
-          <div>OTHER PAGE</div>
-          <Typography>404 Pages</Typography>
-          <Typography>Blank Page</Typography>
+          <div className='sidegrey AccordionWhite dummy' >LOGIN SCREENS</div>
+          <Typography className='AccordionWhite'>Login</Typography>
+          <Typography className='AccordionWhite'>Register</Typography>
+          <Typography className='AccordionWhite'>Forgot Password</Typography>
+          <div className='sidegrey AccordionWhite dummy' >OTHER PAGE</div>
+          <Typography className='AccordionWhite'>404 Pages</Typography>
+          <Typography className='AccordionWhite'>Blank Page</Typography>
         </AccordionDetails>
       </Accordion>
-      <Typography>Charts</Typography>
-      <Typography>Tables</Typography>
+      <br></br>
+      <Typography className='sideElement'><BarChartIcon className='iconsOut' />Charts</Typography><br></br>
+      <Typography className='sideElement'><BackupTableIcon className='iconsOut'/>Tables</Typography>
       <hr></hr>
     </div>
             </div>
