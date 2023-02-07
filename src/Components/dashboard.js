@@ -1,13 +1,15 @@
 import React from 'react'
+import Base from '../Base'
 import Sidebar from './Sidebar'
 
 const Dashboard = () => {
   return (
-    <div>
-
-   <span>helloe</span>
-
-   </div>
+    
+  <Base>
+      <div>helllo</div>
+      
+   </Base>
+   
   )
 }
 
