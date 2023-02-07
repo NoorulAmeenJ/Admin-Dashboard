@@ -1,18 +1,33 @@
 /* .App {
   text-align: center;
 } */
-.fullScreen{
+/* .fullScreen{
   display: flex;
 }
 .fullbar{
   background-color: whitesmoke;
-  width: 80%;
+  width: 85%;
+} */
+.fullScreen{
+  /* border: 5px solid red; */
+  display: flex;
+  flex-direction: row;
+  /* gap: 1rem */
+}
+.sideScreen{
+  width: 15%;
+  border: 2px solid red;
+}
+.mainScreens{
+  width: 85%;
+  border: 2px solid blue;
 }
 .sidebar{
   background-color: rgb(46, 162, 208) !important;
-  width: 20%;
+  /* width: 15%; */
   height: 100vh;
   color: white;
+  display: inline-block !important;
 }
 .sbadmin{
   text-align: center;
@@ -22,11 +37,19 @@
 .sideElement{
   color: rgb(224, 217, 217);
   background-color:rgb(46, 162, 208) !important;
-  
   font-size: large !important;
 }
+.fiveElement{
+  font-size: x-large !important;
+}
+.fiveElement:hover{
+  color: white !important;;
+}
 .sideElement:hover{
-  color: white
+  color: white !important
+}
+.dashboard{
+  font-size: larger;
 }
 .sidegrey{
   color: rgb(184, 182, 182);
@@ -46,6 +69,7 @@
   margin-left: 1rem;
   margin-top: 1rem;
   color: aliceblue;
+  /* font-size: xx-large !important; */
   /* background-color: aliceblue; */
 }
 

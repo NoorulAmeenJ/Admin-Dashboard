@@ -1,9 +1,14 @@
 import React from 'react'
+import Sidebar from './Sidebar'
 
-const dashboard = () => {
+const Dashboard = () => {
   return (
-    <div>dashboard</div>
+    <div>
+
+   <span>helloe</span>
+
+   </div>
   )
 }
 
-export default dashboard
+export default Dashboard

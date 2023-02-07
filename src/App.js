@@ -3,7 +3,8 @@ import './App.css';
 import Sidebar from './Components/Sidebar';
 import { Route, Switch } from 'react-router-dom';
 import InvalidUrl from './Components/InvalidUrl';
-
+import Dashboard from './Components/Dashboard';
+import Base from './Base';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
      
      <Switch>
         <Route exact path="/">
-              <Sidebar/>    
+            <Base/>
+            {/* <Sidebar/> */}
+            {/* <InvalidUrl/> */}
         </Route>
 
         <Route path="/hello">
@@ -22,12 +25,6 @@ function App() {
         </Route>
      </Switch>
 
-
-
-
-
-
-    
     </div>
   );
 }

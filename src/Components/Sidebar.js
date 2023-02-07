@@ -19,13 +19,13 @@ const Sidebar = () => {
             <div>
             <div className='sbadmin'>😀  SB Admin</div>
           <hr></hr>
-            <span> <DashboardIcon className='iconsOut'/></span><span> Dashboard</span>
+            <span> <DashboardIcon className='iconsOut'/></span><span className='dashboard'> Dashboard</span>
           <hr></hr>
           <div className='sidegrey' >Interface</div>
         
       <Accordion className='sideElement'>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-        <AdjustIcon className='icons'/>   <Typography className='sideElement fiveElement'>  Components</Typography>
+        <AdjustIcon className='icons'/>   <Typography className='sideElement fiveElement'>Component</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <div className='sidegrey AccordionWhite dummy'>Custom Components</div>
@@ -76,7 +76,7 @@ const Sidebar = () => {
       <hr></hr>
     </div>
             </div>
-            <div className='fullbar'>fullbar</div>
+           
            
     </div>
 
