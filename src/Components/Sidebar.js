@@ -25,7 +25,7 @@ const Sidebar = () => {
         
       <Accordion className='sideElement'>
         <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
-          <Typography className='sideElement'> <AdjustIcon className='icons'/> Components</Typography>
+        <AdjustIcon className='icons'/>   <Typography className='sideElement fiveElement'>  Components</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <div className='sidegrey AccordionWhite dummy'>Custom Components</div>
@@ -40,7 +40,7 @@ const Sidebar = () => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className='sideElement'> <BuildIcon className='icons'/> Utilities</Typography>
+       <BuildIcon className='icons'/>   <Typography className='sideElement fiveElement'>  Utilities</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <div className='sidegrey AccordionWhite dummy' >Custom Utilities</div>
@@ -58,7 +58,7 @@ const Sidebar = () => {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className='sideElement'> <LayersIcon className='icons'/> Pages</Typography>
+          <LayersIcon className='icons'/><Typography className='sideElement fiveElement'>  Pages</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <div className='sidegrey AccordionWhite dummy' >LOGIN SCREENS</div>
@@ -71,8 +71,8 @@ const Sidebar = () => {
         </AccordionDetails>
       </Accordion>
       <br></br>
-      <Typography className='sideElement'><BarChartIcon className='iconsOut' />Charts</Typography><br></br>
-      <Typography className='sideElement'><BackupTableIcon className='iconsOut'/>Tables</Typography>
+      <BarChartIcon className='iconsOut' /> <span className='sideElement fiveElement'>Charts</span><br></br>
+      <BackupTableIcon className='iconsOut'/> <span className='sideElement fiveElement'>Tables</span>
       <hr></hr>
     </div>
             </div>

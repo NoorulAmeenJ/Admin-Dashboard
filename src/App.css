@@ -45,4 +45,30 @@
 .iconsOut{
   margin-left: 1rem;
   margin-top: 1rem;
+  color: aliceblue;
+  /* background-color: aliceblue; */
 }
+
+         /* Imvalid-Url */
+.invalid{
+  text-align: center;
+  margin-top: 15rem;
+  background-image: linear-gradient(coral,whitesmoke);
+}
+#invalid-home{
+  background-color: coral;
+  color: black;
+  border-radius: 5rem;
+  font-size: larger;
+  width:7rem;
+  padding: 0.5rem;
+}
+
+
+
+
+@media screen and (max-width:600px){
+  .fiveElement {
+     display: none;
+  }
+  }
