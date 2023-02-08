@@ -12,10 +12,7 @@ function App() {
      
      <Switch>
         <Route exact path="/">
-            {/* <Base/> */}
-            {/* <Sidebar/> */}
             <Dashboard/>
-            {/* <InvalidUrl/> */}
         </Route>
 
         <Route path="/hello">

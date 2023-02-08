@@ -38,7 +38,6 @@
   color: rgb(224, 217, 217);
   background-color:rgb(46, 162, 208) !important;
   font-size: large !important;
-  /* position: absolute !important; */
 }
 .sideElement:hover{
   color: white !important
@@ -71,9 +70,13 @@
   margin-left: 1rem;
   margin-top: 1rem;
   color: aliceblue;
-  /* font-size: xx-large !important; */
-  /* background-color: aliceblue; */
 }
+
+@media screen and (max-width:800px){
+  .fiveElement {
+     display: none;
+  }
+  }
 
          /* Imvalid-Url */
 .invalid{
@@ -90,11 +93,133 @@
   padding: 0.5rem;
 }
 
+         /* Dashboard */
+.dashBoardContainer{
+  background: radial-gradient(rgb(247, 236, 236),whitesmoke);
+}
+.dbWhiteBox{
+  display: flex;
+  background-color: white
+}
+.dbsearchBox{
+  flex-basis: 50%;
+  justify-content: flex-start;
+  padding: 1rem ;
+  margin-left: 2rem;
+ 
+}
+.dbinputBox{
+  width: 7rem !important;
+  height: 2rem;
 
+}
+.dbbuttonbox{
+  background-color: rgb(127, 127, 170);
+  height: 2.5rem;
+}
+.dbnotificatonBox{
+  flex-basis: 50%;
+  text-align: end;
+}
+.dbicons{
+  padding: 1rem;
+}
+.dbsubContainer {
+  padding: 2rem;
+}
+.dbheadingbox{
+  display: flex;
+  font-size: x-large;
+  margin-bottom: 3rem;
+}
+.db1stheading{
+    flex-basis: 50%;
+}
+.db2rdbutton{
+  flex-basis: 50%;
+  text-align: end;
+}
+.dbgeneratebutton{
+   background-color: blueviolet;
+   font-size: large;
+   padding : 0.5rem;
+}
+.dbincomeTaxbox{
+     display: grid;
+     grid-template-columns: repeat(auto-fill,minmax(13rem,1fr));
+     gap: 2rem;
+     margin-bottom: 3rem;
+     /* ; */
+}
+.dbincomeTaxbox1{
+  display: flex;
+  /* border: 2px solid greenyellow; */
+  padding: 1rem;
+  background-color: white;
+  border-left:5px solid blue;
+}
+.dbincomeTaxbox2{
+  display: flex;
+  /* border: 2px solid greenyellow; */
+  padding: 1rem;
+  background-color: white;
+  border-left:5px solid greenyellow;
+}
+.dbincomeTaxbox3{
+  display: flex;
+  /* border: 2px solid greenyellow; */
+  padding: 1rem;
+  background-color: white;
+  border-left:5px solid pink;
+}
+.dbincomeTaxbox4{
+  display: flex;
+  padding: 1rem;
+  border-left:5px solid orangered;
+  background-color: white;
+}
+.dbincometxbox80{
+  flex-basis: 80%;
+}
+.dbincometxbox20{
+  flex-basis: 20%;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+.dbearningM{
+    color: blue; 
+   
+}
+.dbrupees{
+  font-weight: bold;
+}
+.dbearningA{
+  color: greenyellow;
+}
+.dbtasks{
+   color: pink;
+}
+.dbpendingreq{
+  color: orangered;
+}
+.container {
+  background-color: rgb(192, 192, 192);
+  width: 80%;
+  border-radius: 15px;
+}
 
+.skill {
+  background-color: pink;
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
 
-@media screen and (max-width:800px){
-  .fiveElement {
-     display: none;
-  }
-  }
+.html {
+  width: 50%;
+  color : rgb(132, 115, 115)
+ 
+}
+
