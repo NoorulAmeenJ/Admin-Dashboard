@@ -30,7 +30,7 @@ const Dashboard = () => {
             <div className='dbheadingbox'>
                    <div className='db1stheading'>DashBoard</div>
                    <div className='db2rdbutton'><button className="dbgeneratebutton">Generate Report</button></div>
-            </div>
+               </div>
            <div className='dbincomeTaxbox'>
               <div className='dbincomeTaxbox1'>
                 <div className='dbincometxbox80'>
@@ -57,7 +57,7 @@ const Dashboard = () => {
                   <div className='dbtasks'>TASKS</div>
                  <div className='dbpercentage dbrupees'>
                  <div class="container">
-        <div class="skill html">50%</div>
+        <div class="skill">50%</div>
     </div>
                  </div>
                  </div>
@@ -75,7 +75,51 @@ const Dashboard = () => {
                 <div className='dbtaxboxicon'><PendingActionsIcon/></div>
                </div>
             </div> 
-     </div>
+               </div>
+            <div className='dbprojectsbox'>
+               <div className='dbtitle'>Project</div>
+               <hr></hr>
+               <div className='dbheadingandpercent'>
+               <div className='dbheading'>Server Migration</div>
+               <div className='dbpercent'>20%</div>
+               </div>
+               <div className='dbprogressbarwhole'>
+                  <div className='dbprogressbar1'>1</div>
+               </div>
+               
+               <div className='dbheadingandpercent'>
+               <div className='dbheading'>Sales Tracking</div>
+               <div className='dbpercent'>40%</div>
+               </div>
+               <div className='dbprogressbarwhole'>
+                  <div className='dbprogressbar2'>2</div>
+               </div>
+
+               <div className='dbheadingandpercent'>
+               <div className='dbheading'>Customer Database</div>
+               <div className='dbpercent'>60%</div>
+               </div>
+               <div className='dbprogressbarwhole'>
+                  <div className='dbprogressbar3'>3</div>
+               </div>
+
+               <div className='dbheadingandpercent'>
+               <div className='dbheading'>Payout Details</div>
+               <div className='dbpercent'>80%</div>
+               </div>
+               <div className='dbprogressbarwhole'>
+                  <div className='dbprogressbar4'>4</div>
+               </div>
+
+               <div className='dbheadingandpercent'>
+               <div className='dbheading'>Account Setup</div>
+               <div className='dbpercent'>100%</div>
+               </div>
+               <div className='dbprogressbarwhole'>
+                  <div className='dbprogressbar5'>5</div>
+               </div>
+        
+            </div>
   </div> 
   </div>  
    </Base>

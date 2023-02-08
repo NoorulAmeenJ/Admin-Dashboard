@@ -215,11 +215,62 @@
   text-align: right;
   font-size: 20px;
   border-radius: 15px;
-}
-
-.html {
   width: 50%;
   color : rgb(132, 115, 115)
- 
+}
+.dbprojectsbox{
+  background-color: white;
+  width: 60%;
+}
+.dbtitle{
+  padding: 1rem;
+  font-size: larger;
+  background-color: whitesmoke;
+  color: blue
 }
 
+.dbheadingandpercent{
+  display: flex;
+}
+.dbheading{
+  flex-basis: 90%;
+}
+.dbpercent{
+  flex-basis: 10%;
+  text-align: end;
+}
+.dbprogressbarwhole{
+  width: 100%;
+  border-radius: 5rem;
+  background-color: rgb(213, 202, 202);
+}
+.dbprogressbar1{
+  width: 20%;
+  background-color: red;
+  color : red;
+  border-bottom-right-radius: 5rem;
+}
+.dbprogressbar2{
+  width: 40%;
+  background-color: yellowgreen;
+  color : yellowgreen;
+  border-bottom-right-radius: 5rem;
+}
+.dbprogressbar3{
+  width: 60%;
+  background-color: blue;
+  color : blue;
+  border-bottom-right-radius: 5rem;
+}
+.dbprogressbar4{
+  width: 80%;
+  background-color: violet;
+  color : violet;
+  border-bottom-right-radius: 5rem;
+}
+.dbprogressbar5{
+  width: 100%;
+  background-color: green;
+  color : green;
+  border-bottom-right-radius: 5rem;
+}
