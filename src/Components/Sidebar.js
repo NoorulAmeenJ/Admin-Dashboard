@@ -14,7 +14,7 @@ import LayersIcon from '@mui/icons-material/Layers';
 
 const Sidebar = () => {
   return (
-    <div className='fullScreen'>
+   
             <div className='sidebar'>
             <div>
             <div className='sbadmin'>😀  SB Admin</div>
@@ -78,7 +78,7 @@ const Sidebar = () => {
             </div>
            
            
-    </div>
+  
 
   )
 }

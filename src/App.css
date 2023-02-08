@@ -15,11 +15,11 @@
   /* gap: 1rem */
 }
 .sideScreen{
-  width: 15%;
+  width: 19%;
   border: 2px solid red;
 }
 .mainScreens{
-  width: 85%;
+  width: 80%;
   border: 2px solid blue;
 }
 .sidebar{
@@ -27,7 +27,7 @@
   /* width: 15%; */
   height: 100vh;
   color: white;
-  display: inline-block !important;
+  /* display: inline-block !important; */
 }
 .sbadmin{
   text-align: center;
@@ -38,6 +38,10 @@
   color: rgb(224, 217, 217);
   background-color:rgb(46, 162, 208) !important;
   font-size: large !important;
+  /* position: absolute !important; */
+}
+.sideElement:hover{
+  color: white !important
 }
 .fiveElement{
   font-size: x-large !important;
@@ -45,9 +49,7 @@
 .fiveElement:hover{
   color: white !important;;
 }
-.sideElement:hover{
-  color: white !important
-}
+
 .dashboard{
   font-size: larger;
 }
@@ -91,7 +93,7 @@
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
   .fiveElement {
      display: none;
   }
