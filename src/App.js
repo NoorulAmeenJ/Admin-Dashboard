@@ -5,18 +5,19 @@ import { Route, Switch } from 'react-router-dom';
 import InvalidUrl from './Components/InvalidUrl';
 import Dashboard from './Components/Dashboard';
 import Base from './Base';
+import Buttons from './Components/Buttons';
 
 function App() {
   return (
     <div className="App">
      
      <Switch>
-        <Route exact path="/">
+        <Route exact path="/dashboard">
             <Dashboard/>
         </Route>
 
-        <Route path="/hello">
-             <h1>url</h1> 
+        <Route path="/buttons">
+           <Buttons/>
         </Route>
         <Route path="**">
              <InvalidUrl/>

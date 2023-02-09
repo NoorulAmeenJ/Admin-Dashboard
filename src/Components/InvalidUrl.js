@@ -3,10 +3,11 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 
 const InvalidUrl = () => {
+  const history= useHistory()
     const home = () => {
-        history.push("/")
+        history.push("/dashboard")
     }
-    const history= useHistory()
+   
     return (
    
     <div className="invalid">

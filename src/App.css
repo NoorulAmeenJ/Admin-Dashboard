@@ -15,12 +15,12 @@
   /* gap: 1rem */
 }
 .sideScreen{
-  width: 19%;
-  border: 2px solid red;
+  width: 20%;
+  /* border: 2px solid red; */
 }
 .mainScreens{
   width: 80%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 .sidebar{
   background-color: rgb(46, 162, 208) !important;
@@ -73,19 +73,39 @@
 }
 
 @media screen and (max-width:800px){
-  .fiveElement {
+  .fiveElement, .dbinputBox{
      display: none;
+  }
+  .dbsearchBox{
+    flex-basis: 25%;
+    justify-content: flex-start;
+    padding: 1rem ;
+    margin-left: 2rem;
+  }
+  .dbbuttonbox{
+    background-color: rgb(127, 127, 170);
+    height: 2.5rem;
+  }
+  .dbnotificatonBox{
+    flex-basis: 75%;
+    border: 2px solid aqua;
+  }
+  
+  .dbicons{
+    padding: 0.1rem;
   }
   }
 
          /* Imvalid-Url */
 .invalid{
+  /* width: 100%vw; */
+  height: 100vh;
   text-align: center;
-  margin-top: 15rem;
+  /* margin-top: 15rem; */
   background-image: linear-gradient(coral,whitesmoke);
 }
 #invalid-home{
-  background-color: coral;
+  background-color: white;
   color: black;
   border-radius: 5rem;
   font-size: larger;
@@ -101,12 +121,14 @@
   display: flex;
   background-color: white
 }
+.dbheadingandtaxbox{
+  padding: 2rem;
+}
 .dbsearchBox{
   flex-basis: 50%;
   justify-content: flex-start;
   padding: 1rem ;
   margin-left: 2rem;
- 
 }
 .dbinputBox{
   width: 7rem !important;
@@ -124,9 +146,7 @@
 .dbicons{
   padding: 1rem;
 }
-.dbsubContainer {
-  padding: 2rem;
-}
+
 .dbheadingbox{
   display: flex;
   font-size: x-large;
@@ -220,7 +240,8 @@
 }
 .dbprojectsbox{
   background-color: white;
-  width: 60%;
+  /* width: 60%; */
+  min-width: 400px;
 }
 .dbtitle{
   padding: 1rem;
@@ -235,6 +256,13 @@
 .dbheading{
   flex-basis: 90%;
 }
+.dbsubContainer{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: white;
+  gap: 2rem;
+  }
 .dbpercent{
   flex-basis: 10%;
   text-align: end;
@@ -273,4 +301,72 @@
   background-color: green;
   color : green;
   border-bottom-right-radius: 5rem;
+}
+.dbillustrationsbox{
+  background-color: white;
+  border: 2px solid whitesmoke;
+  width: 500px;
+}
+.dbimage{
+   width: 350px;
+   height: max-content;
+   margin: auto;
+ 
+}
+.dpimageimg{
+  height: 100%;
+  width: 100%;
+}
+.dbilluslink:hover{
+  font-size: larger;
+  color: rgb(2, 2, 255);
+}
+.dbcolorcolorbox{
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.dbcolorbox{
+  padding: 2rem;
+  width: 9rem;
+  height: 3rem;
+  border: 2px solid salmon;
+}
+.dbcolorbox1{
+  background-color:#4e73df ;
+}
+.dbcolorbox2{
+  background-color: #1cc88a ;
+}
+.dbcolorbox3{
+  background-color:#36b9cc ;
+}
+.dbcolorbox4{
+  background-color:#f6c23e ;
+}
+.dbcolorbox5{
+  background-color: #e74a3b;
+}
+.dbcolorbox6{
+  background-color: #858796
+  ;
+}
+.dbcolorbox7{
+  background-color: #f8f9fc;
+}
+.dbcolorbox8{
+  background-color: #5a5c69;
+}
+.dbdevelopmentbox{
+  width: 400px;
+}
+
+             /* button page */
+.buttonpage{
+  background-color: #1cc88a;
+  height: 100vh; 
+}
+.heading{
+   
 }

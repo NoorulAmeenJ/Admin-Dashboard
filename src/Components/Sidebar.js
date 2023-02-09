@@ -10,16 +10,21 @@ import AdjustIcon from '@mui/icons-material/Adjust';
 import BackupTableIcon from '@mui/icons-material/BackupTable';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
+import { useHistory } from 'react-router-dom';
 // import {BuildIcon ,AdjustIcon,LayersIcon,BarChartIcon,BackupTableIcon}  from '@mui/icons-material';
 
 const Sidebar = () => {
+  const history = useHistory()
+  const dash = () => {
+      history.push("/dashboard")
+  }
   return (
    
             <div className='sidebar'>
             <div>
             <div className='sbadmin'>😀  SB Admin</div>
           <hr></hr>
-            <span> <DashboardIcon className='iconsOut'/></span><span className='dashboard'> Dashboard</span>
+            <span> <DashboardIcon className='iconsOut'/></span><span className='dashboard' onClick={dash}> Dashboard</span>
           <hr></hr>
           <div className='sidegrey' >Interface</div>
         

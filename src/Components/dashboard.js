@@ -26,7 +26,7 @@ const Dashboard = () => {
          <NotificationsActiveIcon className='dbicons'/>
          </div>
      </div>
-     <div className='dbsubContainer'>
+     <div className='dbheadingandtaxbox'>
             <div className='dbheadingbox'>
                    <div className='db1stheading'>DashBoard</div>
                    <div className='db2rdbutton'><button className="dbgeneratebutton">Generate Report</button></div>
@@ -76,6 +76,8 @@ const Dashboard = () => {
                </div>
             </div> 
                </div>
+               </div>   
+            <div className='dbsubContainer'>
             <div className='dbprojectsbox'>
                <div className='dbtitle'>Project</div>
                <hr></hr>
@@ -120,6 +122,31 @@ const Dashboard = () => {
                </div>
         
             </div>
+            <div className='dbillustrationsbox'>
+                  <div className='dbtitle'>Illustrations</div>
+                  <div className='dbimage'>
+                    <center> <img  className='dpimageimg' src='https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_posting_photo.svg' alt="Illustartion's Image"/></center>
+                  </div>
+                  <p className='dbilluspara'>Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
+                  <a className='dbilluslink' href='https://undraw.co/'>Browse Illustrations on unDraw →</a>
+            </div>
+            <div className='dbcolorcolorbox'>
+               <div className='dbcolorbox dbcolorbox1'>Primary</div>
+               <div className='dbcolorbox dbcolorbox2'>Success</div>
+               <div className='dbcolorbox dbcolorbox3'>Info</div>
+               <div className='dbcolorbox dbcolorbox4'>Warning</div>
+               <div className='dbcolorbox dbcolorbox5'>Danger</div>
+               <div className='dbcolorbox dbcolorbox6'>Secondary</div>
+               <div className='dbcolorbox dbcolorbox7'>Light</div>
+               <div className='dbcolorbox dbcolorbox8'>Dark</div>
+            </div>
+            <div className='dbdevelopmentbox'>
+               <div className='dbtitle'>Development Approach</div>
+               <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
+               <p>Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
+               
+            </div>
+
   </div> 
   </div>  
    </Base>
