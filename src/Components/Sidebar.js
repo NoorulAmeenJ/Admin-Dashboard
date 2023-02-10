@@ -19,7 +19,6 @@ const Sidebar = () => {
       history.push("/dashboard")
   }
   return (
-   
             <div className='sidebar'>
             <div>
             <div className='sbadmin'>😀  SB Admin</div>
