@@ -367,6 +367,49 @@
   background-color: #1cc88a;
   height: 100vh; 
 }
-.heading{
-   
+           /* animationpage */
+.animationpage{
+   background-color: #36b9cc;
+   height : 100vh;
+}           
+          /* BlankPage */
+.BlankPage{
+  background-color:#4e73df;
+  height : 100vh;
+}
+      /* Borders */
+.Borders{
+  background-color:#e74a3b; 
+  height : 100vh;
+}
+ 
+.Cardspage{
+  background-color:#f6c23e;
+  height : 100vh;
+}
+       /* Chartspage */
+.Chartspage{
+  background-color:aqua;
+  height : 100vh;
+}
+.Colors{
+  background-color:crimson;
+  height : 100vh;
+}
+.ErrorPage{
+  background-color:chocolate;
+  height : 100vh;
+}
+.ForgotPassword{
+  background-color:darkorchid;
+  height : 100vh;
+}
+.Login{
+  background-color:fuchsia;
+  height : 100vh;
+}
+
+.Others{
+  background-color:gray;
+  height : 100vh;
 }

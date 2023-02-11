@@ -1,8 +1,14 @@
 import React from 'react'
+import Base from '../Base'
+
 
 const BlankPage = () => {
   return (
-    <div>BlankPage</div>
+    <Base>
+    <div className="BlankPage">
+       <h1 className="heading">Blank Page  is Working in Progress</h1>
+       </div>
+    </Base>
   )
 }
 

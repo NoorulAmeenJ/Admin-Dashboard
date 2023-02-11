@@ -1,8 +1,14 @@
 import React from 'react'
+import Base from '../Base'
+
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <Base>
+    <div className="Login">
+       <h1 className="heading">Login is Working in Progress</h1>
+       </div>
+    </Base>
   )
 }
 

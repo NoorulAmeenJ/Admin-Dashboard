@@ -1,8 +1,14 @@
 import React from 'react'
+import Base from '../Base'
+
 
 const Borders = () => {
   return (
-    <div>Borders</div>
+    <Base>
+    <div className="Borderspage">
+       <h1 className="heading">Borders Page is Working in Progress</h1>
+       </div>
+    </Base>
   )
 }
 

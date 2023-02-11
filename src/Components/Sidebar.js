@@ -11,19 +11,21 @@ import BackupTableIcon from '@mui/icons-material/BackupTable';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
 import { useHistory } from 'react-router-dom';
-// import {BuildIcon ,AdjustIcon,LayersIcon,BarChartIcon,BackupTableIcon}  from '@mui/icons-material';
+import App from '../App';
+
 
 const Sidebar = () => {
   const history = useHistory()
   const dash = () => {
-      history.push("/dashboard")
+    console.log("s")
+      history.push("/buttons")
   }
   return (
             <div className='sidebar'>
             <div>
             <div className='sbadmin'>😀  SB Admin</div>
           <hr></hr>
-            <span> <DashboardIcon className='iconsOut'/></span><span className='dashboard' onClick={dash}> Dashboard</span>
+            <span> <DashboardIcon className='iconsOut'/></span><span className='dashboard' onClick={history.push("/dashboard")}> Dashboard</span>
           <hr></hr>
           <div className='sidegrey' >Interface</div>
         
@@ -33,8 +35,8 @@ const Sidebar = () => {
         </AccordionSummary>
         <AccordionDetails>
           <div className='sidegrey AccordionWhite dummy'>Custom Components</div>
-          <Typography className='AccordionWhite'>Cards</Typography>
-          <Typography className='AccordionWhite'>Buttons</Typography>
+          <Typography className='AccordionWhite' onClick={history.push("/cards")}>Cards</Typography>
+          <Typography className='AccordionWhite' onClick={dash}>Buttons</Typography>
         </AccordionDetails>
       </Accordion>
 

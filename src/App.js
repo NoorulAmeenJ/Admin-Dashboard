@@ -24,27 +24,27 @@ function App() {
     <div className="App">
      
      <Switch>
-        <Route exact path="/dashboard">
+        <Route exact path = "/">
             <Dashboard/>
         </Route>
 
-        <Route path="/Animations">
+        <Route path = "/Animations">
            <Animations/>
         </Route>
 
-        <Route path="/BlankPage">
+        <Route path = "/BlankPage">
               <BlankPage/>
            </Route>
 
-           <Route path="/Borders">
+           <Route path = "/Borders">
               <Borders/>
            </Route>
 
-           <Route path="/Buttons">
-           <Buttons/>
+           <Route path = "/buttons">
+              <Buttons/>
             </Route>
 
-           <Route path="/Cards">
+           <Route path = "/cards">
              <Cards/>
            </Route>
 
