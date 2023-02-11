@@ -1,13 +1,14 @@
 import { Button } from '@mui/material'
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const InvalidUrl = () => {
+ 
+ const navigate = useNavigate()
 
-  const history= useHistory()
-  
     const home = () => {
-        history.push("/dashboard")
+     navigate("/")
+    
     }
    
     return (

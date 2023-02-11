@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Sidebar from './Components/Sidebar';
-import { Route, Switch } from 'react-router-dom';
+import {Route, Router, Switch , Routes} from 'react-router-dom';
 import InvalidUrl from './Components/InvalidUrl';
 import Dashboard from './Components/Dashboard';
 import Base from './Base';
@@ -23,68 +23,68 @@ function App() {
   return (
     <div className="App">
      
-     <Switch>
-        <Route path = "/dashboard">
-            <Dashboard/>
+  <Routes>
+     <Route path = "/Animations" element={ <Animations/>}>
+          
         </Route>
-
-        <Route path = "/Animations">
-           <Animations/>
+        
+        <Route path = "/" element={ <Dashboard/>}>
+           
         </Route>
-
-        <Route path = "/BlankPage">
-              <BlankPage/>
+           
+        <Route path = "/BlankPage" element={<BlankPage/>}>
+              
            </Route>
 
-           <Route path = "/Borders">
-              <Borders/>
+           <Route path = "/Borders" element={<Borders/>}>
+              
            </Route>
 
-           <Route path = "/buttons">
-              <Buttons/>
+           <Route path = "/Buttons" element={ <Buttons/>}>
+             
             </Route>
 
-           <Route path = "/cards">
-             <Cards/>
+           <Route path = "/cards" element={ <Cards/>}>
+            
            </Route>
 
-           <Route path="/Charts">
-              <Charts/>
+           <Route path="/Charts" element={<Charts/>}>
+        
            </Route>
 
-           <Route path="/Colors">
-              <Colors/>
+           <Route path="/Colors" element={ <Colors/>}>
+             
            </Route>
 
-           <Route path="/ForgotPassword">
-              <ForgotPassword/>
+           <Route path="/ForgotPassword" element={  <ForgotPassword/>}>
+            
            </Route>
 
-           <Route path="/ErrorPage">
-              <ErrorPage/>
+           <Route path="/ErrorPage" element={  <ErrorPage/>}>
+            
            </Route>
 
-           <Route path="/Login">
-              <Login/>
+           <Route path="/Login" element={  <Login/>}>
+            
            </Route>
 
-           <Route path="/Others">
-              <Others/>
+           <Route path="/Others" element={ <Others/>}>
+             
            </Route>
 
-           <Route path="/Register">
-                <Register/>
+           <Route path="/Register" element={     <Register/>}>
+           
            </Route>
 
-           <Route path="/Tables">
-                <Tables/>
+           <Route path="/Tables" element={ <Tables/>}>
+                
            </Route>
 
-        <Route path="**">
-             <InvalidUrl/>
+        <Route path="*"  element={<InvalidUrl/>}>
+             
         </Route>
 
-     </Switch>
+        </Routes>
 
     </div>
   );

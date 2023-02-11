@@ -10,24 +10,25 @@ import AdjustIcon from '@mui/icons-material/Adjust';
 import BackupTableIcon from '@mui/icons-material/BackupTable';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
-import { useHistory } from 'react-router-dom';
-import App from '../App';
+import { Navigate, useNavigate} from 'react-router-dom';
 
+import App from '../App';
+// import
 
 const Sidebar = () => {
-  const history = useHistory()
-
-  const dash = () => {
-    
-    console.log("s")
-      history.push("/buttons")
+  // const history = useHistory();
+ const  navigate = useNavigate()
+  var charts = () => {
+    // history.push("/Charts")
+    navigate('/Charts')
   }
+
   return (
             <div className='sidebar'>
             <div>
             <div className='sbadmin'>😀  SB Admin</div>
           <hr></hr>
-            <span> <DashboardIcon className='iconsOut'/></span><span className='dashboard' onClick={history.push("/dashboard")}> Dashboard</span>
+            <span> <DashboardIcon className='iconsOut'/></span><span className='dashboard' onClick={()=>navigate("/")}> Dashboard</span>
           <hr></hr>
           <div className='sidegrey' >Interface</div>
         
@@ -37,8 +38,8 @@ const Sidebar = () => {
         </AccordionSummary>
         <AccordionDetails>
           <div className='sidegrey AccordionWhite dummy'>Custom Components</div>
-          <Typography className='AccordionWhite' onClick={history.push("/cards")}>Cards</Typography>
-          <Typography className='AccordionWhite' onClick={dash}>Buttons</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/cards")}>Cards</Typography>
+          <Typography className='AccordionWhite' onClick={()=>   navigate('/Buttons')}>Buttons</Typography>
         </AccordionDetails>
       </Accordion>
 
@@ -52,10 +53,10 @@ const Sidebar = () => {
         </AccordionSummary>
         <AccordionDetails>
           <div className='sidegrey AccordionWhite dummy' >Custom Utilities</div>
-          <Typography className='AccordionWhite'>Colors</Typography>
-          <Typography className='AccordionWhite'>Borders</Typography>
-          <Typography className='AccordionWhite'>Animations</Typography>
-          <Typography className='AccordionWhite'>Others</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/Colors")}>Colors</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/Borders")}>Borders</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/Animations")}>Animations</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/Others")}>Others</Typography>
         </AccordionDetails>
       </Accordion>
      <hr></hr>
@@ -70,17 +71,17 @@ const Sidebar = () => {
         </AccordionSummary>
         <AccordionDetails>
           <div className='sidegrey AccordionWhite dummy' >LOGIN SCREENS</div>
-          <Typography className='AccordionWhite'>Login</Typography>
-          <Typography className='AccordionWhite'>Register</Typography>
-          <Typography className='AccordionWhite'>Forgot Password</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/Login")}>Login</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/Register")}>Register</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/ForgotPassword")}>Forgot Password</Typography>
           <div className='sidegrey AccordionWhite dummy' >OTHER PAGE</div>
-          <Typography className='AccordionWhite'>404 Pages</Typography>
-          <Typography className='AccordionWhite'>Blank Page</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/ErrorPage")}>404 Pages</Typography>
+          <Typography className='AccordionWhite' onClick={()=>navigate("/BlankPage")}>Blank Page</Typography>
         </AccordionDetails>
       </Accordion>
       <br></br>
-      <BarChartIcon className='iconsOut' /> <span className='sideElement fiveElement'>Charts</span><br></br>
-      <BackupTableIcon className='iconsOut'/> <span className='sideElement fiveElement'>Tables</span>
+      <BarChartIcon className='iconsOut' /> <span className='sideElement fiveElement' onClick={charts}>Charts</span><br></br>
+      <BackupTableIcon className='iconsOut'/> <span className='sideElement fiveElement' onClick={()=>navigate("/Tables")}>Tables</span>
       <hr></hr>
     </div>
             </div>

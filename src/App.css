@@ -52,6 +52,11 @@
 .dashboard{
   font-size: larger;
 }
+.dashboard:hover{
+  background-color: #e74a3b;
+  color: black;
+}
+
 .sidegrey{
   color: rgb(184, 182, 182);
   font-size: small;
