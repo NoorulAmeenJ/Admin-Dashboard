@@ -10,9 +10,8 @@ import AdjustIcon from '@mui/icons-material/Adjust';
 import BackupTableIcon from '@mui/icons-material/BackupTable';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
-import { Navigate, useNavigate} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
-import App from '../App';
 // import
 
 const Sidebar = () => {

@@ -1,10 +1,6 @@
-import { Dashboard } from '@mui/icons-material'
+// import { Dashboard } from '@mui/icons-material'
 import React from 'react'
-import Right from './Right'
 import Sidebar from './Components/Sidebar'
-import Left from './Left'
-import InvalidUrl from './Components/InvalidUrl'
-import App from './App'
 
 function Base({children}){
     return(

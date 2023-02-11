@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Sidebar from './Components/Sidebar';
-import {Route, Router, Switch , Routes} from 'react-router-dom';
+// import Sidebar from './Components/Sidebar';
+import {Route, Routes} from 'react-router-dom';
 import InvalidUrl from './Components/InvalidUrl';
 import Dashboard from './Components/Dashboard';
-import Base from './Base';
+// import Base from './Base';
 import Buttons from './Components/Buttons';
 import Animations from './Components/Animations';
 import BlankPage from './Components/BlankPage';

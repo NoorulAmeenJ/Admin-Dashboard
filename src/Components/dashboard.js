@@ -1,7 +1,7 @@
-import { FilledInput, FormControl, InputLabel } from '@mui/material'
+// import { FilledInput, FormControl, InputLabel } from '@mui/material'
 import React from 'react'
 import Base from '../Base'
-import Sidebar from './Sidebar'
+// import Sidebar from './Sidebar'
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import MessageIcon from '@mui/icons-material/Message';
@@ -125,7 +125,7 @@ const Dashboard = () => {
             <div className='dbillustrationsbox'>
                   <div className='dbtitle'>Illustrations</div>
                   <div className='dbimage'>
-                    <center> <img  className='dpimageimg' src='https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_posting_photo.svg' alt="Illustartion's Image"/></center>
+                    <center> <img  className='dpimageimg' src='https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_posting_photo.svg' alt="Illustartion's"/></center>
                   </div>
                   <p className='dbilluspara'>Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
                   <a className='dbilluslink' href='https://undraw.co/'>Browse Illustrations on unDraw →</a>
