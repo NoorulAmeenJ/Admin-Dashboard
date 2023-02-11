@@ -16,7 +16,9 @@ import App from '../App';
 
 const Sidebar = () => {
   const history = useHistory()
+
   const dash = () => {
+    
     console.log("s")
       history.push("/buttons")
   }

@@ -24,7 +24,7 @@ function App() {
     <div className="App">
      
      <Switch>
-        <Route exact path = "/">
+        <Route path = "/dashboard">
             <Dashboard/>
         </Route>
 
